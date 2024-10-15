@@ -11,51 +11,21 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div id="right-side">
-            <header>
-                <span class="button">
-                    <a href=""></a>
-                </span>
-            </header>
-            <main>
-                <section>
-                    <div class="card">
-                        <div class="img">
-                            <img src="" alt="">
-                        </div>
-                        <h3></h3>
-                        <figure></figure>
-                    </div>  
-                </section>
-                <section>
-                    <div class="card">
-                        <div class="img">
-                            <img src="" alt="">
-                        </div>
-                        <h3></h3>
-                        <figure></figure>
-                    </div>  
-                </section>
-                <section>
-                    <div class="card">
-                        <div class="img">
-                            <img src="" alt="">
-                        </div>
-                        <h3></h3>
-                        <figure></figure>
-                    </div>  
-                </section>
-            </main>
+    <div class="wrapper flex column">
+        <div class="container flex">
+            <!-- PARTE DI SINISTRA -->
+             <!-- LOGO -->
             <div id="left-side">
                 <div class="img">
                     <img src="" alt="">
                 </div>
+                <!-- HOME NAV -->
                 <ul>
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
+                <!-- PLAYLIST -->
                 <h3></h3>
                 <ul>
                     <li class="special"></li>
@@ -67,14 +37,72 @@
                     <li></li>
                     <li></li>
                 </ul>
+                <!-- BOTTOM SETTINGS -->
                 <span class="button">
                     <a href=""></a>
                 </span>
                 <hr>
+                <!-- PROFILE -->
                 <div class="img">
                     <img src="" alt="">
                 </div>
                 <h5></h5>
+            </div>
+            <!-- PARTE DESTRA -->
+             <!-- UPGRADE -->
+            <div id="right-side">
+                <header class="flex end">
+                    <span class="hd-button">
+                        <a href="">effettua l'upgrade</a>
+                    </span>
+                </header>
+                <!-- MAIN -->
+                <main>
+                    <!-- menu -->
+                    <section id="menu">
+                        <nav>
+                            <ul class="flex center gap-30">
+                                <li>
+                                    in evidenza
+                                    <div class="special"></div>
+                                </li>
+                                <li>podcast</li>
+                                <li>classifiche</li>
+                                <li>generi e mood</li>
+                                <li>nuove uscite</li>
+                                <li>scopri</li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section id="recente">
+                        <!--PLAYLIST -->
+                        <div class="card">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                            <h3></h3>
+                            <figure></figure>
+                        </div>  
+                    </section>
+                    <section id="per-te">
+                    <div class="card">
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                        <h3></h3>
+                        <figure></figure>
+                    </div>  
+                    </section>
+                    <section id="hit">
+                        <div class="card">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                            <h3></h3>
+                            <figure></figure>
+                        </div>  
+                    </section>
+                </main>
             </div>
         </div>
         <footer>
@@ -117,7 +145,7 @@
                         </a>
                     </span>
                     <div class="tempo">
-
+                        
                     </div>
                     <div class="volume">
                         <span class="button">
