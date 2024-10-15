@@ -22,7 +22,6 @@
 /* FLEX UTILITIES */
 .flex{
     display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -42,19 +41,26 @@
     gap: 30px;
 }
 
+.gap-15{
+    gap: 15px;
+}
 
+/* GENERAL UTILITIES */
 .wrapper{
     height: 100vh;
     width: 100vw;
+    color: white;
 }
 
 .container{
     flex: 1 1 auto;
+    max-height: calc(100vh - 100px);
 }
 
 #left-side{
     flex: 0 0 230px;
     background-color: var(--color-black);
+    height: 100%;
 }
 
 #right-side{
@@ -62,12 +68,13 @@
     flex: 1 1 auto;
     background-color: var(--color-dark);
     overflow-y: auto;
+    
 }
 /* ///////////////// */
 /* HEADER */
 /* ///////////////// */
 header{
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.9);
     position: sticky;
     top: 0;
 
@@ -91,8 +98,12 @@ a{
 /* ///////////////// */
 main{
     padding: 15px;
-    overflow-y: scroll;
+    
 }
+
+/* ///////////////// */
+/* MENU */
+/* ///////////////// */
 
 ul{
     list-style: none;
@@ -101,7 +112,6 @@ ul{
 #menu li{
     position: relative;
     text-transform: uppercase;
-    color: white;
     font-weight: bold;
 }
 
@@ -114,7 +124,90 @@ ul{
     transform: translate(-50%);
 }
 
+/* /////////////// */
+/* RECENTE */
+/* /////////////// */
+
+section:not(#menu){
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.card{
+    width: 20%;
+    padding: 30px 0;
+}
+.img{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+figure{
+    color: grey;
+}
+
+#recente figure{
+    text-align: center;
+}
+
+/* ////////////// */
+/* HITS */
+/* ///////////////// */
+
+#hit .img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
 footer{
     flex: 0 0 100px;
     background-color: var(--color-darkgrey);
+}
+
+
+
+
+
+
+
+/* /////////////////////////// */
+/* MEDIA QUERY */
+/* /////////////////////////// */
+@media screen and (max-width:576px) {
+    #left-side{
+        flex-basis: 70px;
+    }
+    
+    .card{
+        width: 48%;
+    }
+
+    .container{
+        max-height: calc(100vh - 50px);
+    }
+    
+    footer{
+        flex-basis: 50px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    
+    
+}
+
+@media screen and (max-width:1024px) {
+    .wrap{
+        flex-wrap: wrap;
+    }
 }
