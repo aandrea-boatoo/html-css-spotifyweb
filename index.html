@@ -14,62 +14,100 @@
     <div class="wrapper flex column">
         <div class="container flex">
             <!-- PARTE DI SINISTRA -->
-             <!-- LOGO -->
-            <div id="left-side">
-                <div class="img">
-                    <img src="img/logo.svg" alt="">
+            <!-- LOGO -->
+            <div id="left-side" class="flex column between">
+                <div id="upper-side">
+                        <div class="img">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                        <!-- HOME NAV -->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="" class="special">
+                                        <div class="img">
+                                            <img src="img/home.svg" alt="">
+                                        </div>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="img/search.svg" alt="">
+                                        </div>
+                                        <span>Cerca</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="img/libreria.svg" alt="">
+                                        </div>
+                                        <span>La tua libreria</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    <!-- PLAYLIST -->
+                    <section id="playlist">
+                        <h3>playlist</h3>
+                        <ul>
+                            <li class="new">
+                                <a href="">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span>Crea nuova playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Life Music</a>
+                            </li>
+                            <li>
+                                <a href="">Chill Low-Fi Beats</a>
+                            </li>
+                            <li>
+                                <a href="">Mix Allegro</a>
+                            </li>
+                           <li>
+                            <a href="">Daily Mix 1</a>
+                            </li>
+                            <li>
+                                <a href="">Mix Punk</a>
+                            </li>
+                            <li>
+                                <a href="">Canzoni da spiaggia</a>
+                            </li>
+                            <li>
+                                <a href="">Brani che ti piacciono</a>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-                <!-- HOME NAV -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="" class="special">
-                                <div class="img">
-                                    <img src="img/home.svg" alt="">
-                                </div>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
+                    
+                <div id="bottom-side">
+                    <!-- BOTTOM SETTINGS -->
+                    <section id="bottom-setting">
+                        <span class="button">
                             <a href="">
                                 <div class="img">
-                                    <img src="img/search.svg" alt="">
+                                    <img src="img/download.svg" alt="">
                                 </div>
-                                <span>Cerca</span>
+                                <span>Installa app</span>
                             </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="img">
-                                    <img src="img/libreria.svg" alt="">
-                                </div>
-                                <span>La tua libreria</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- PLAYLIST -->
-                <h3>playlist</h3>
-                <ul>
-                    <li class="special"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <!-- BOTTOM SETTINGS -->
-                <span class="button">
-                    <a href=""></a>
-                </span>
-                <hr>
-                <!-- PROFILE -->
-                <div class="img">
-                    <img src="" alt="">
+                        </span>
+                        <hr>
+                    </section>
+                    <!-- PROFILE -->
+                    <section id="profile">
+                        <a href="">
+
+                            <div class="img">
+                                <img src="img/profile.svg" alt="">
+                            </div>
+                            <span>Andrea Boato</span>
+                        </a>
+                    </section>
                 </div>
-                <h5></h5>
             </div>
             <!-- PARTE DESTRA -->
              <!-- UPGRADE -->
@@ -84,7 +122,7 @@
                     <!-- menu -->
                     <section id="menu">
                         <nav>
-                            <ul class="flex  wrap center gap-30">
+                            <ul class="flex  wrap center ">
                                 <li>
                                     in evidenza
                                     <div class="special"></div>
@@ -184,67 +222,68 @@
                 </main>
             </div>
         </div>
-        <footer>
-            <div class="song">
+        <footer class="flex between">
+            <div class="song flex">
                 <div class="img">
-                    <img src="" alt="">
+                    <img src="img/sinister.jpeg" alt="">
                 </div>
-                <h6></h6>
-                <figure></figure>
-                <span class="button">
-                    <a href="">
-                        <i></i>
-                    </a>
-                </span>
-                <span class="button">
-                    <a href="">
-                        <i></i>
-                    </a>
-                </span>
-                <div class="control-button">
-                    <span class="button">
+                <div class="title">
+                    <h6>Sinister</h6>
+                    <figure>Subtitle</figure>
+                </div>
+                <div class="button-cont flex">    
+                    <span class="button heart">
                         <a href="">
-                            <i></i>
-                        </a>
-                    </span><span class="button">
-                        <a href="">
-                            <i></i>
-                        </a>
-                    </span><span class="button">
-                        <a href="">
-                            <i></i>
-                        </a>
-                    </span><span class="button">
-                        <a href="">
-                            <i></i>
-                        </a>
-                    </span><span class="button">
-                        <a href="">
-                            <i></i>
+                            <i class="fa-regular fa-heart"></i>
                         </a>
                     </span>
-                    <div class="tempo">
-                        
-                    </div>
-                    <div class="volume">
-                        <span class="button">
-                            <a href="">
-                                <i></i>
-                            </a>
-                        </span><span class="button">
-                            <a href="">
-                                <i></i>
-                            </a>
-                        </span><span class="button">
-                            <a href="">
-                                <i></i>
-                            </a>
-                        </span>
-                    </div>
+                    <span class="button folder">
+                        <a href="">
+                            <i class="fa-regular fa-folder"></i>
+                        </a>
+                    </span>
                 </div>
+            </div>
+            <div class="control-button">
+                <span class="button">
+                    <a href="">
+                        <i></i>
+                    </a>
+                </span><span class="button">
+                    <a href="">
+                        <i></i>
+                    </a>
+                </span><span class="button">
+                    <a href="">
+                        <i></i>
+                    </a>
+                </span><span class="button">
+                    <a href="">
+                        <i></i>
+                    </a>
+                </span><span class="button">
+                    <a href="">
+                        <i></i>
+                    </a>
+                </span>
+                <div class="tempo">  
+                </div>
+            </div>
+            <div class="volume flex between">
+                <span class="button">
+                    <a href="">
+                        <i class="fa-solid fa-list"></i>
+                    </a>
+                </span><span class="button">
+                    <a href="">
+                        <i class="fa-solid fa-desktop"></i>
+                    </a>
+                </span><span class="button">
+                        <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" value="50" name="volume" id="volume">
+                </span>
             </div>
         </footer>
     </div>
-    
 </body>
 </html>
