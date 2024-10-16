@@ -286,11 +286,29 @@ ul{
     padding: 30px 0;
 }
 .img{
+    position: relative;
     width: 100%;
 }
 
 img{
     width: 100%;
+}
+
+.play-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.play-hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
 }
 
 #recente h3{
@@ -442,9 +460,31 @@ footer{
 }
 
 
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* HOVER */
+/* ///////////////////////// */
+/* ///////////////////////// */
+#left-side a:hover{
+    color: white;
+}
+
+
+header:hover{
+    background-color: black;
+}
+
+.card:hover .play-hover{
+    display: block;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
 
 /* /////////////////////////// */
+/* /////////////////////////// */
 /* MEDIA QUERY */
+/* /////////////////////////// */
 /* /////////////////////////// */
 @media screen and (max-width:576px) {
     #left-side{
