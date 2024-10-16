@@ -122,8 +122,8 @@ nav img{
 
 #playlist{
     padding-top: 5px;
-    min-height: 0;
-
+    max-height: calc(100% - 155px);
+    overflow-y: auto;
 }
 
 #playlist h3{
@@ -142,10 +142,6 @@ nav img{
     display: inline-block;
     position: relative;
     top: -7px;
-}
-
-#playlist ul{
-    overflow-y: auto;
 }
 
 #playlist li{
@@ -425,8 +421,8 @@ footer{
 }
 
 /* //////////////// */
-
 /* VOLUME */
+/* //////////////// */
 .volume{
     margin: auto 20px;
     width: 150px;
