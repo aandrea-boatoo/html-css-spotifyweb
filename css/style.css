@@ -221,8 +221,28 @@ hr{
     flex: 1 1 auto;
     background-color: var(--color-dark);
     overflow-y: auto;
-    
 }
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-darkgrey); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0, 0.5) ; 
+    border-radius: 5px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 0, 0, 0.9);
+  }
+
 /* ///////////////// */
 /* HEADER */
 /* ///////////////// */
@@ -247,7 +267,6 @@ span.hd-button{
 /* ///////////////// */
 main{
     padding: 15px;
-    overflow: auto;
 }
 
 /* ///////////////// */
