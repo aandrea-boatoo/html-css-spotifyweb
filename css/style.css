@@ -88,6 +88,12 @@ a{
     height: 100%;
     padding: 10px;
     color: lightgrey;
+    min-height: 320px;
+    font-weight: bold;
+}
+
+#logo-small{
+    display: none;
 }
 
 #left-side a{
@@ -142,6 +148,7 @@ nav img{
     display: inline-block;
     position: relative;
     top: -7px;
+    font-size: 0.9em;
 }
 
 #playlist li{
@@ -174,7 +181,7 @@ hr{
 
 /* //////////////// */
 /* PROFILE */
-/* //////////////// */
+/* //////////////// /////////////////////////////////////////////////////*/
 
 #profile{
     margin: 10px;
@@ -182,8 +189,7 @@ hr{
 
 #profile .img{
     position: relative;
-    padding: 10px;
-    display: inline-block;
+        display: inline-block;
     width: 45px;
     height: 45px;
     background-color: lightgrey;
@@ -204,7 +210,6 @@ hr{
 #profile span{
     position: relative;
     top: -15px;
-    display: inline-block;
     margin-left: 5px;
 }
 
@@ -225,6 +230,7 @@ header{
     background-color: rgb(0, 0, 0, 0.9);
     position: sticky;
     top: 0;
+    z-index: 10;
 
 }
 
@@ -266,6 +272,11 @@ ul{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    display: none;
+}
+
+#menu .active{
+    display: block;
 }
 
 /* /////////////// */
@@ -345,15 +356,18 @@ footer{
 /* SONG */
 .song{
     margin: 20px 10px;
+    width: 15%;
 }
+
 .song .img{
-    width: 50px;
+    flex: 0 0 50px;
 }
 
 .title{
     position: relative;
     top: 10px;
     padding-left: 10px;
+    font-size: x-large;
 }
 
 .title figure{
@@ -372,11 +386,12 @@ footer{
 
 /* CONTROL BUTTON */
 .music{
-    margin: 20px 10px;
+    margin: 20px 0;
+    width: 60%;
 }
 
 .control-button{
-    width: 300px;
+    width: 30%;
     margin: auto 10px;
 }
 .control-button .button {
@@ -392,6 +407,7 @@ footer{
 
 .tempo{
     margin-bottom: 10px;
+    width: 60%;
 }
 
 #music{
@@ -399,12 +415,12 @@ footer{
     margin: 0 3px;
     border-radius: 10px;
     -webkit-appearance: none;
-    width: 500px;
+    width: 80%px;
     accent-color: white;
     background: grey;
     opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+   -webkit-transition: .2s;
+   transition: opacity .2s;
 }
 
 #music::-webkit-slider-thumb {
@@ -425,8 +441,12 @@ footer{
 /* //////////////// */
 .volume{
     margin: auto 20px;
-    width: 150px;
+    width: 15%;
     height: 20px;
+}
+
+.volume span{
+    gap: 2px;
 }
 
 #volume{
@@ -434,7 +454,7 @@ footer{
     top: -2px;
     border-radius: 10px;
     -webkit-appearance: none;
-    width: 50px;
+    width: 70px;
     accent-color: white;
     background: grey;
     opacity: 0.7;
@@ -444,8 +464,8 @@ footer{
 
 #volume::-webkit-slider-thumb {
     appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: lightgrey;
     cursor: pointer;
@@ -470,6 +490,10 @@ header:hover{
     background-color: black;
 }
 
+#menu li:hover div{
+    display: block;
+}
+
 .card:hover .play-hover{
     display: block;
     background-color: rgb(0, 0, 0, 0.5);
@@ -482,39 +506,8 @@ header:hover{
 /* MEDIA QUERY */
 /* /////////////////////////// */
 /* /////////////////////////// */
-@media screen and (max-width:576px) {
-    #left-side{
-        flex-basis: 70px;
-        overflow-y: auto;
-    }
-    
-    header span {
-        height: 10vw;
-    }
-    .card{
-        flex: 0 0 45%;
-        height: auto;
-    }
 
-    .container{
-        max-height: calc(100vh - 50px);
-    }
-
-    footer{
-        flex-basis: 50px;
-    }
-    
-}
-
-@media screen and (max-width:768px) {
-    main{
-        font-size: .5em;
-    }
-
-    
-}
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     .wrap{
         flex-wrap: wrap;
     }
@@ -522,3 +515,123 @@ header:hover{
         width: 20%;
     }
 }
+
+@media screen and (max-width:998px) {
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 30%;
+    }
+
+    .song .button-cont{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    main{
+        font-size: .5em;
+    }
+
+    .card{
+        width: 45%;
+    }
+
+    .song .button-cont{
+        flex-direction: column;
+    }
+
+    .control-button{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    #left-side{
+        flex-basis: 70px;
+        overflow-y: auto;
+    }
+    
+    /* scompare */
+    a span, #playlist, hr{
+        display: none;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+    }
+
+    #bottom-setting .img{
+        left: 5px;
+    }
+
+    #profile{
+        margin: 10px 0;
+    }
+
+    #profile .img{
+        left: 5px;
+    }
+
+    header span {
+        height: 10vw;
+    }
+
+    .card-cont{
+        justify-content: center;
+    }
+
+    .card{
+        flex: 0 0 60%;
+        height: auto;
+        font-size: large;
+    }
+
+    .container{
+        max-height: calc(100vh - 100px);
+    }
+
+    .song{
+        margin: 20px 5px;
+        width: 20%;
+    }
+    .song .img{
+        flex-basis: 30px;
+        position: relative;
+        top: 10px;
+    }
+
+    .song .title{
+        font-size: small;
+    }
+
+    .control-button{
+        width: 60%;
+    }
+    
+    #music{
+        width: 50%;
+    }
+
+    .volume{
+        margin: 5px 5px;
+        gap: 3px;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    #volume{
+        width: 100%;
+    }
+    
+    
+}
+
+
