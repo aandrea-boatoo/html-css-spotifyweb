@@ -397,10 +397,12 @@ footer{
     position: relative;
     top: 10px;
     padding: 0 40px;
+    color: grey;
 }
 
-.button-cont span{
+.button-cont .fa-regular{
     padding: 0 5px;
+    color: grey;
 }
 
 /* CONTROL BUTTON */
@@ -507,6 +509,10 @@ header:hover{
     background-color: black;
 }
 
+header .hd-button:hover{
+    scale: 1.1;
+}
+
 #menu li:hover div{
     display: block;
 }
@@ -514,6 +520,14 @@ header:hover{
 .card:hover .play-hover{
     display: block;
     background-color: rgb(0, 0, 0, 0.5);
+}
+
+footer figure:hover{
+    text-decoration: underline;
+}
+
+.button-cont a:hover .fa-regular{
+    color: white;
 }
 
 
