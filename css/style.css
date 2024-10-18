@@ -281,7 +281,7 @@ ul{
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0 1vw;
+    padding: 5px 1vw;
 }
 
 #menu li div{
@@ -309,7 +309,6 @@ ul{
 .pod{
     width: 30%;
 }
-
 
 .card{
     width: 15%;
