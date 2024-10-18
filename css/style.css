@@ -181,7 +181,7 @@ hr{
 
 /* //////////////// */
 /* PROFILE */
-/* //////////////// /////////////////////////////////////////////////////*/
+/* //////////////// */
 
 #profile{
     margin: 10px;
@@ -222,8 +222,10 @@ hr{
     background-color: var(--color-dark);
     overflow-y: auto;
 }
-
+/* ///////////////////////// */
 /* SCROLL BAR */
+/* //////////////////////// */
+
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -307,7 +309,7 @@ ul{
 }
 
 .pod{
-    width: 30%;
+    width: 31%;
 }
 
 .card{
@@ -558,6 +560,10 @@ footer figure:hover{
         width: 30%;
     }
 
+    .pod{
+        width: 45%;
+    }
+
     .song .button-cont{
         padding: 0 10px;
     }
@@ -570,6 +576,11 @@ footer figure:hover{
 
     .card{
         width: 45%;
+    }
+
+    .pod{
+        max-width: 100%;
+        min-width: 80%;
     }
 
     .song .button-cont{
@@ -664,8 +675,6 @@ footer figure:hover{
     #volume{
         width: 100%;
     }
-    
-    
 }
 
 
